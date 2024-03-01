@@ -1,0 +1,17 @@
+{
+  "name": "mrfixit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord": "^0.8.2",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  }
+}
