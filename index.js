@@ -26,5 +26,12 @@ console.log(`Successfully fixed tiktok ${content}`)
 ${content.replace('twitter', 'fxtwitter')}`);
     console.log(`Successfully fixed tweet ${content}`)
   }
+
+  if (content.includes(process.env.INSTA_PREFIX)) {
+    message.reply(
+        `This looks like it's from Instagram. Here's the fixed embed!  
+${content.replace('instagram', 'ddinstagram')}`);
+    console.log(`Successfully fixed insta ${content}`)
+  }
 });
 client.login(process.env.DISCORD_TOKEN);
