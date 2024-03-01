@@ -9,13 +9,14 @@ const prefix = "!";
 client.on("messageCreate", function(message) {
 
   if (message.author.bot) return;
-  
+
   const content = message.content;
 
   if (content.includes(process.env.TIKTOK_PREFIX)) {
     message.reply(
         `This looks like a tiktok. Here's the fixed embed!  
 ${content.replace('tiktok', 'vxtiktok')}`);
+console.log(`Successfully fixed tiktok ${content}`)
     
   }
 
@@ -23,7 +24,7 @@ ${content.replace('tiktok', 'vxtiktok')}`);
     message.reply(
         `This looks like tweet. Here's the fixed embed!  
 ${content.replace('twitter', 'fxtwitter')}`);
-    
+    console.log(`Successfully fixed tweet ${content}`)
   }
 });
 client.login(process.env.DISCORD_TOKEN);
