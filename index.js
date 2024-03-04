@@ -30,7 +30,7 @@ ${content.replace('twitter', 'fxtwitter')}`);
     
   }
 
-  if (content.includes(PREFIXES.INSTA)) {
+  if (content.includes(PREFIXES.INSTA) && message.embeds.length > 0 && !message.embeds[0].data.image) {
     message.channel.send(
       `Hey ${message.author.toString() }, that looks like it's from Insta. I fixed the embed for ya!  
 ${content.replace('instagram', 'ddinstagram')}`);
